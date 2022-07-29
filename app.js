@@ -4,31 +4,23 @@ import { pokemon } from './array-pokemon.js';
 import { renderPoke } from './render-poke.js';
 import { games } from './video-game-array.js';
 import { renderGame } from './render-vg.js';
+import { movies } from './array-movies.js';
+import { renderMovie } from './render-movies.js';
 
-// import functions and grab DOM elements
+
 const mealList = document.getElementById('meal-list');
 for (let meal of meals) {
-    // const div = document.createElement('div');
-    // div.classList.add('Meal');
-    // div.textContent = meal;
+
     const mealEl = renderMeal(meal);
+
     mealList.append(mealEl);
 }
 
 
 const pokemonList = document.getElementById('pokemon-list');
 for (let pokeItem of pokemon) {
-    const pokeEl = renderPoke(pokeItem);
-  // const divEl = document.createElement('div');
-  // const pTag = document.createElement('p');
-  // const pokeEvoEl = document.createElement('h2');
-  // const colorEl = document.createElement('p');
 
-    // pokeEvoEl.textContent = pokeItem.evolution;
-    // colorEl.textContent = pokeItem.color;
-    // divEl.append(pTag, pokeEvoEl, colorEl);
-  
-    // pTag.textContent = pokeItem.name;
+    const pokeEl = renderPoke(pokeItem);
 
     pokemonList.append(pokeEl);
 }
@@ -38,4 +30,11 @@ for (let game of games) {
     const gamesEl = renderGame(game);
 
     gameListEl.append(gamesEl);
+}
+
+const moviesListEl = document.getElementById('movies-list');
+for (let movie of movies) {
+    const moviesEl = renderMovie(movie);
+
+    movieListEl.append(moviesEl);
 }

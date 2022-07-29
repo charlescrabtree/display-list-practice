@@ -24,14 +24,3 @@ export const games = [
         yearReleased: 2003
     }
 ];
-
-
-
-
-// const booksListEl = document.getElementById('books-list');
-
-
-// for (let book of books) {
-//     const bookEl = renderBook(book);
-//     booksListEl.append(bookEl);
-// }

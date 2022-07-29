@@ -1,11 +1,3 @@
-
-// const gameList = document.getElementById('game-list');
-// for (let game of games) {
-//   const gamesEl = renderGameList(game);
-
-//   gameListEl.append(gamesEl);
-// }
-
 export function renderGame(games) {
     const gamesEl = document.createElement('div');
     const topEl = document.createElement('div');
