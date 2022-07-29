@@ -1,2 +1,2 @@
-export const meals = ['breakfast', 'lunch', 'dinner'];
+export const meals = ['Breakfast', 'Lunch', 'Dinner'];
 

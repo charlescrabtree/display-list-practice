@@ -17,7 +17,7 @@ export function renderGame(games) {
     for (let genre of games.genre) {
         const genreEl = document.createElement('li');
 
-        genreEl.textContent = `This game falls under the ${genre} categories`;
+        genreEl.textContent = `This game falls under the ${genre} category`;
         
         genresEl.append(genreEl);
     }
