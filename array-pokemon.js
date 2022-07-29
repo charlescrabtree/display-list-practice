@@ -5,13 +5,13 @@ export const pokemon = [
         color: 'red'
     },
     {
-        name: 'Wartortle',
+        name: 'Raichu',
         evolution: 2,
-        color: 'blue'
+        color: 'yellow'
     },
     {
-        name: 'Alakazam',
+        name: 'Blastoise',
         evolution: 3,
-        color: 'yellow'
+        color: 'blue'
     }
 ];

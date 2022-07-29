@@ -1,7 +1,7 @@
 export function renderMovie(movies) {
     const moviesEl = document.createElement('div');
     const upEl = document.createElement('div');
-    const directorEl = document.createElement('p')
+    const directorEl = document.createElement('p');
     const movieTitleEl = document.createElement('h5');
     const publicationEl = document.createElement('p');
     const downEl = document.createElement('div');
@@ -20,7 +20,7 @@ export function renderMovie(movies) {
 
 
     return moviesEl;
-}
+}   
 
 
 // publicationEl.textContent = `Published by ${book.publication.publisher} in ${book.publication.year}`;
