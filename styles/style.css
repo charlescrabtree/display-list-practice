@@ -66,7 +66,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -77,7 +77,7 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
+
   @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
@@ -96,3 +96,35 @@ footer {
     }
 
   }
+
+#meal-list, #pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+}
+
+.Meal {
+    text-align: center;
+    margin: 4px;
+}
+
+#game-list, #movies-list {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.45);
+    text-align: center;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 15px;
+    height: 400px;
+    width: 900px;
+    color: white;
+}
+
+#game-list {
+    background-color: #2b8de9;
+}
+
+#movies-list {
+    background-color: rgb(114, 6, 6);
+}
