@@ -8,8 +8,12 @@
 
 export function renderGame(games) {
     const gamesEl = document.createElement('div');
-    const gameTitleEl = document.createElement('h1');
-    const studioEl = document.createElement('h2');
+    const topEl = document.createElement('div');
+    const gameTitleEl = document.createElement('h2');
+    const studioEl = document.createElement('h4');
+    const bottomEl = document.createElement('div');
+    const leftEl = document.createElement('div');
+    
     const genresEl = document.createElement ('ul');
     const yearEl = document.createElement ('p'); 
 
@@ -27,7 +31,12 @@ export function renderGame(games) {
     }
 
     gamesEl.classList.add('games');
-    gamesEl.append(games);
+    bottomEl.classList.add('bottom');
+    leftEl.classList.add('left');
+
+    gamesEl.append(topEl, bottomEl);
+    topEl.append(gameTitleEl, bottomEl);
+    bottomEl.append(genresEl, yearEl);
     
     
 
