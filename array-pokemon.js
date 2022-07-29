@@ -2,16 +2,16 @@ export const pokemon = [
     {
         name: 'charmander',
         evolution: 1,
-        color: 'red',
+        color: 'red'
     },
     {
         name: 'wartortle',
         evolution: 2,
-        color: 'blue',
+        color: 'blue'
     },
     {
         name: 'alakazam',
         evolution: 3,
-        color: 'yellow',
-    },
+        color: 'yellow'
+    }
 ];
