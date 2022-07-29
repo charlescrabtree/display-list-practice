@@ -20,6 +20,18 @@ export const games = [
     {
         studio: 'Bioware',
         title: 'Knights of the Old Republic',
-        genre: ['RPG', 'sci-fi', 'adventure']
+        genre: ['RPG', 'sci-fi', 'adventure'],
+        yearReleased: 2003
     }
 ];
+
+
+
+
+// const booksListEl = document.getElementById('books-list');
+
+
+// for (let book of books) {
+//     const bookEl = renderBook(book);
+//     booksListEl.append(bookEl);
+// }

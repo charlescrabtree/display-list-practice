@@ -3,6 +3,7 @@ import { renderMeal } from './render-meals.js';
 import { pokemon } from './array-pokemon.js';
 import { renderPoke } from './render-poke.js';
 import { games } from './video-game-array.js';
+import { renderGame } from './render-vg.js';
 
 // import functions and grab DOM elements
 const mealList = document.getElementById('meal-list');
@@ -32,9 +33,9 @@ for (let pokeItem of pokemon) {
     pokemonList.append(pokeEl);
 }
 
-const gameList = document.getElementById('vg-list');
-  for (let game of games) {
-    const gamesEl = renderGameList(game);
+const gameListEl = document.getElementById('game-list');
+for (let game of games) {
+    const gamesEl = renderGame(game);
 
     gameListEl.append(gamesEl);
-  }
+}
