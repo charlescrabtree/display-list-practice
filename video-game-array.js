@@ -17,4 +17,9 @@ export const games = [
         genre: ['scrolling shooter', 'adventure', 'sci-fi'],
         yearReleased: 1997
     },
+    {
+        studio: 'Bioware',
+        title: 'Knights of the Old Republic',
+        genre: ['RPG', 'sci-fi', 'adventure']
+    }
 ];

@@ -2,6 +2,7 @@ import { meals } from './array-meals.js';
 import { renderMeal } from './render-meals.js';
 import { pokemon } from './array-pokemon.js';
 import { renderPoke } from './render-poke.js';
+import { games } from './video-game-array.js';
 
 // import functions and grab DOM elements
 const mealList = document.getElementById('meal-list');
@@ -30,9 +31,10 @@ for (let pokeItem of pokemon) {
 
     pokemonList.append(pokeEl);
 }
-// initialize global state
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+const gameList = document.getElementById('vg-list');
+  for (let game of games) {
+    const gamesEl = renderGameList(game);
+
+    gameListEl.append(gamesEl);
+  }
