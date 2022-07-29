@@ -36,5 +36,5 @@ const moviesListEl = document.getElementById('movies-list');
 for (let movie of movies) {
     const moviesEl = renderMovie(movie);
 
-    movieListEl.append(moviesEl);
+    moviesListEl.append(moviesEl);
 }

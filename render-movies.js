@@ -5,7 +5,6 @@ export function renderMovie(movies) {
     const movieTitleEl = document.createElement('h5');
     const publicationEl = document.createElement('p');
     const downEl = document.createElement('div');
-    const rightEl= document.createElement('div');
 
     directorEl.textContent = movies.director;
     movieTitleEl.textContent = movies.title;
@@ -14,10 +13,13 @@ export function renderMovie(movies) {
     moviesEl.classList.add('movies');
     upEl.classList.add('up');
     downEl.classList.add('down');
-    rightEl.classList.add('left');
     
-    
+    moviesEl.append(upEl, downEl),
+    upEl.append(movieTitleEl, directorEl);
+    downEl.append(publicationEl);    
 
+
+    return moviesEl;
 }
 
 
